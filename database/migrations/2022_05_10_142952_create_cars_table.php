@@ -18,7 +18,6 @@ class CreateCarsTable extends Migration
             $table->string('brand', 100);
             $table->string('model', 100);
             $table->tinyInteger('year');
-            $table->timestamps();
         });
     }
 
