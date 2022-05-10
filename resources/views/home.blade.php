@@ -11,6 +11,8 @@
                 <p>{{ $car->year }}</p>
             </div>
         @endforeach
+        <button>Cliccami</button>
+        <input type="text">
         {{ $carList->links() }}
     </div>
 @endsection
