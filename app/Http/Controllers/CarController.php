@@ -17,7 +17,7 @@ class CarController extends Controller
         {
             $carList = Car::paginate(5);
 
-            return view('comics', compact('carList'));
+            return view('home', compact('carList'));
         }
     }
 
