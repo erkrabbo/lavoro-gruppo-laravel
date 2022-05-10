@@ -17,7 +17,7 @@ class CreateCarsTable extends Migration
             $table->id();
             $table->string('brand', 100);
             $table->string('model', 100);
-            $table->tinyInteger('year');
+            $table->integer('year');
         });
     }
 
