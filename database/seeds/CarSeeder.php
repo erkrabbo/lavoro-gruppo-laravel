@@ -17,8 +17,8 @@ class CarSeeder extends Seeder
 
         $carInfos = [
             'brand' => $faker->company(),
-            'model' => $faker->sentence(),
-            'year' => $faker->words(4, true),
+            'model' => $faker->words(4, true),
+            'year' => $faker->year(),
         ];
 
         for ($index = 0; $index < 100; $index++) {
