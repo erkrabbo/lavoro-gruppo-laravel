@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class car extends Model
 {
+<<<<<<< HEAD
     public $timestamps = false;
     protected $fillable = [
         'model',
@@ -13,3 +14,8 @@ class car extends Model
         'year'
     ];
 }
+=======
+
+    public $timestamps = false;
+}
+>>>>>>> master

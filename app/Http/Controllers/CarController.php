@@ -14,7 +14,11 @@ class CarController extends Controller
      */
     public function index()
     {
-        //
+        {
+            $carList = Car::paginate(5);
+
+            return view('home', compact('carList'));
+        }
     }
 
     /**
