@@ -13,18 +13,17 @@ class CarSeeder extends Seeder
      */
     public function run(Faker $faker)
     {
-        //
-
-        $carInfos = [
-            'brand' => $faker->company(),
-            'model' => $faker->words(4, true),
-            'year' => $faker->year(),
-        ];
 
         for ($index = 0; $index < 100; $index++) {
-            $car = new Car;
+            $carInfos = [
+                'brand' => $faker->company(),
+                'model' => $faker->words(4, true),
+                'year' => $faker->year(),
+            ];
+
+            $car = new Car();
             $car->fill($carInfos);
             $car->save();
-        }
+        };
     }
 }
